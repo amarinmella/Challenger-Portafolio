@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Mi Portafolio</title>
 </head>
 <body>
     <!-- Menú -->
-    <header>
-        <img src="./img/vector.png" alt="Logo">
-        <h1>Andrés Marín</h1>
+    <header class="cabecera_container">
+        <div class="cabecera_logo_titulo">
+            <img class="cabecera_logo" src="./img/vector.png" alt="Logo">
+            <h1 class="cabecera_titulo">Andrés Marín</h1>
+        </div>
+        
         <nav>
-            <ul>
-                <li>Sobre mi</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formación</li>
-                <li>Proyectos</li>
-                <li>contacto@andresdev.com</li>
+            <ul class="cabecera_container__cabecera_navegador">
+                <li><a href="">Sobre mi</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Hobbies</a></li>
+                <li><a href="">Formación</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">contacto@andresdev.com</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!-- Presentación -->
-        <section>
-            <img src="./img/profile.png" alt="Foto de Perfil">
-            <h2>Hola, mi nombre es Andrés Marín y construyo paginas web</h2>
-            <p>Soy formado en Desarrollo Web Front End y actualmente estoy participando del proyecto Orcle ONE en Alura Latam.</p>
+        <section class="presentacion_container">
+            <img class="presentaciom_foto" src="./img/profile.png" alt="Foto de Perfil">
             <div>
+                <h2>Hola, mi nombre es Andrés Marín y construyo paginas web</h2>
+                <p>Soy formado en Desarrollo Web Front End y actualmente estoy participando del proyecto Orcle ONE en Alura Latam.</p>
                 <ul>
                     <li><a href="">Github</a><img src="./img/arrow.png" alt="Flecha"></li>
                     <li><a href="">Linkedin</a><img src="./img/arrow.png" alt="Flecha"></li>

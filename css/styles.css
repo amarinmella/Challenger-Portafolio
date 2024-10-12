@@ -1,0 +1,68 @@
+/* -- Variables Globales --*/
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: "Krub", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/*-- Menu --*/
+.cabecera_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1136px;
+    padding: 1.25rem;  
+}
+
+.cabecera_logo_titulo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cabecera_titulo {
+    font-size: 1rem;
+}
+
+.cabecera_container__cabecera_navegador {
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+    gap: 1.5rem;
+}
+
+/*-- Presentación --*/
+.presentacion_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 1136px;
+    padding: 1.25rem;
+}
+
+.presentaciom_foto {
+    width: 20%;
+    border-radius: 20%;
+    object-fit: cover;
+}
