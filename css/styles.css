@@ -1,17 +1,29 @@
-/* -- Variables Globales --*/
+/*------------------------ Variables Globales ------------------------------*/
 :root {
     --color-de-fondo: #F5F5F5;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: var(--color-de-fondo);
     font-family: "Krub", sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
     line-height: 1.6;
+    max-width: 1440px;/* Define el ancho máximo del contenedor para no extenderse demasiado en pantallas grandes */
+    width: 100%;/* Permitir que se adapte al ancho de la ventana */
+    padding: 1.25rem;/* Espacio interno para que no quede pegado a los bordes */
+    background-color: #f5f5f5;/* Un fondo para diferenciar el contenedor */
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Añadir sombra para darle algo de estilo */
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 ol,
@@ -25,18 +37,30 @@ a {
     color: var(--color-de-link);
 }
 
-/*-- Menu --*/
+.container {
+    max-width: 1440px;/* Ancho máximo de toda la página */
+    width: 100%;
+    margin: 0 auto;/* Centrado horizontal */
+    padding: 20px;
+    background-color: #f5f5f5;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+/*------------------------ Sección Menu ------------------------------*/
 .cabecera_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 1136px;
-    padding: 1.25rem;  
+    max-width: 1200px;/* Ancho consistente */
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 20px;/* Espaciado interno uniforme */
 }
 
 .cabecera_logo_titulo{
     display: flex;
     align-items: center;
+    white-space: nowrap;/* Evita que el texto se divida en varias líneas */
     gap: 0.5rem;
 }
 
@@ -46,23 +70,181 @@ a {
 
 .cabecera_container__cabecera_navegador {
     display: flex;
-    justify-content: space-between;
-    font-size: medium;
-    gap: 1.5rem;
+    justify-content: flex-end;/* Asegura que los elementos dentro del menú se distribuyan hacia la derecha */
+    gap: 2rem;
+    margin-left: auto;/* Empuja el menú completamente hacia el lado derecho */
+    white-space: nowrap;/* Evita saltos de línea */
+    font-size: 1rem;
 }
 
-/*-- Presentación --*/
-.presentacion_container {
+.nav_container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 1136px;
+    width: 71rem;
     padding: 1.25rem;
 }
 
-.presentaciom_foto {
-    width: 20%;
+
+/*------------------------ Sección Presentación ------------------------------*/
+.presentacion_container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;/* Ancho consistente */
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 20px;/* Espaciado interno uniforme */
+}
+
+.presentaciom__container__foto {
+    width: 25%;
     border-radius: 20%;
     object-fit: cover;
+}
+
+.presentacion_container__textos h2 {
+    font-size: 3.25rem;
+    line-height: 1;
+}
+
+.presentacion_container__textos p {
+    margin: 1.2rem 0 0 0;
+    font-size: 1.375;
+}
+
+.presentacion_container__redes {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
+/*------------------------ Sección Sobre mi ------------------------------*/
+.sobremi_container {
+    background-color: #D1E9F6;
+    max-width: 1200px;/* Ancho consistente con el título principal */
+    width: 100%;
+    margin: 0 auto;/* Centrando el contenedor */
+    padding: 1.25rem 20px;/* Espaciado interno uniforme */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;/* Alinear todo el contenido al inicio para que esté alineado con el título principal */
+}
+
+.sobremi_container__textos {
+    margin: 0;/* Asegúrate de que no haya margen adicional que desalinée el contenido */
+    padding: 1.25rem 0;/* Espaciado interno sin afectar el margen externo */
+    width: 100%;/* Ocupar todo el ancho del contenedor */
+}
+
+.sobremi_container__textos__p {
+    width: 100%;
+    /* Asegúrate de que ocupe todo el ancho disponible */
+}
+
+.textos_p {
+    margin-top: 1.4rem;
+    /* Espacio superior para separar párrafos */
+}
+
+.sobremi_container__textos__firma {
+    margin-top: 1.5rem;/* Espacio superior para separar la firma */
+}
+
+
+/*------------------------ Sección Skills ------------------------------*/
+.skills_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;/* Ancho consistente */
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 20px;/* Espaciado interno uniforme */
+}
+
+.skills_container__tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    gap: 3rem;
+}
+
+/* Contenedor individual de cada tecnología */
+.skills_item {
+    display: flex;
+    flex-direction: column;/* Organiza el logo y el texto verticalmente */
+    justify-content: flex-end;
+    background-color: var(--color-de-fondo-menu);
+    width: 8.125rem;
+    height: 8rem;
+    padding: 10px;/* Añadir algo de espacio interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Añadir sombra para darle estilo */
+}
+
+/* Logo de la tecnología */
+.skills_logo {
+    width: 25%;/* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+/* Nombre de la tecnología */
+.skills_name {
+    margin-top: 10px;/* Espacio entre el logo y el nombre */
+    font-size: 1rem;/* Ajusta el tamaño de la fuente según sea necesario */
+    color: #000;/* Color del texto */
+}
+
+
+/*------------------------ Sección Hobbies ------------------------------*/
+.hobbies_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    /* Ancho consistente */
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.25rem 20px;
+    /* Espaciado interno uniforme */
+}
+
+.hobbies_container__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    gap: 3rem;
+}
+
+.hobbies_item {
+    display: flex;
+    flex-direction: column;/* Organiza el logo y el texto verticalmente */
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--color-de-fondo-menu);
+    width: 8.125rem;
+    height: 8rem;
+    padding: 10px;/* Añadir algo de espacio interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Añadir sombra para darle estilo */
+}
+
+.hobbies_logo {
+    width: 25%;
+    height: auto;
+}
+
+.hobbies_name {
+    margin-top: 10px;/* Espacio entre el logo y el nombre */
+    font-size: 1rem;/* Ajusta el tamaño de la fuente según sea necesario */
+    color: #000;/* Color del texto */
 }
