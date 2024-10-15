@@ -290,8 +290,8 @@ a {
 }
 
 
-/*------------------------ Sección Experiencia Profesional ------------------------------*/
-.experiencia_container {
+/*------------------------ Sección Experiencia Profesional / Proyectos ------------------------------*/
+.proyectos_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,4 +300,123 @@ a {
     width: 100%;
     margin: 0 auto;
     padding: 1.25rem 20px;/* Espaciado interno uniforme */
+    
+}
+
+.proyectos_container__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    gap: 3.5rem;
+}
+
+/*.proyectos_item {
+
+}*/
+
+
+/*------------------------ Sección Contacto ------------------------------*/
+.contacto_container {
+    background-color: #D1E9F6;
+    /* Color de fondo suave para toda la sección */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    /* Espaciado alrededor del contenedor */
+    box-sizing: border-box;
+}
+
+.contacto_container__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea al inicio en caso de tener contenido de diferentes alturas */
+    gap: 2rem;/* Espacio entre la imagen y el formulario */
+    width: 100%;
+}
+
+/* Imagen del contacto */
+.contacto_item_imagen {
+    flex: 1;/* La imagen ocupa una menor proporción */
+    max-width: 400px;/* Define un ancho máximo para la imagen */
+}
+
+.contacto_item_imagen img {
+    width: 100%; /* Imagen escalada al contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+/* Formulario del contacto */
+.contacto_item_formulario {
+    flex: 2;
+    /* El formulario ocupa más espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Espacio entre los elementos del formulario */
+}
+
+.contacto_item_formulario h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contacto_item_formulario p {
+    margin-bottom: 1.5rem;
+}
+
+/* Campos del formulario */
+.contacto_form_item {
+    display: flex;
+    flex-direction: column;/* Coloca el label sobre el input */
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #333; /* Color suave para el texto de las etiquetas */
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;/* Ocupa todo el ancho disponible */
+    box-sizing: border-box;
+}
+
+.enviar_btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start; /* Botón alineado al inicio del formulario */
+    transition: background-color 0.3s;
+}
+
+.enviar_btn:hover {
+    background-color: #0056b3;
+    /* Color más oscuro para indicar hover */
+}
+
+
+/*------------------------ Footer ------------------------------*/
+.footer_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.footer_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

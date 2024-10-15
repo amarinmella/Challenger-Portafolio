@@ -163,57 +163,92 @@
             </section>
 
             <!-- Experiencia Profesional -->
-            <section class="experiencia_container">
+            <section class="proyectos_container">
                 <h2>Experiencia Profesional / Proyectos</h2>
-                <div>
-                    <h3>Titulo de la Experiencia</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem asperiores optio nisi,
-                        obcaecati aperiam!</p>
-                </div>
+                <div class="proyectos_container__item">
+                    <!--<h3>Codigo Secreto</h3>
+                    <h4>Encriptador de texto</h4>
+                    <p>Challenge Alura Codificador</p>-->
+                    <div class="">
+                        <img src="./img/Experiência.png" alt="Imagen del juego Encriptador">
+                    </div>
+                </div>    
 
-                <div>
-                    <h3>Titulo de la Experiencia</h3>
+                <div class="proyectos_container__item">
+                    <!--<h3>Titulo de la Experiencia</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem asperiores optio nisi,
                         obcaecati
-                        aperiam!</p>
+                        aperiam!</p>-->
+                        <div>
+                            <img src="./img/Experiência (1).png" alt="Imagen del juego el Colgado">
+                        </div>
                 </div>
 
-                <div>
-                    <h3>Titulo de la Experiencia</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorem asperiores optio nisi,
-                        obcaecati
-                        aperiam!</p>
+                <div class="proyectos_container__item">
+                    <!--<h3>Codigo Secreto</h3>
+                                    <h4>Encriptador de texto</h4>
+                                    <p>Challenge Alura Codificador</p>-->
+                    <div class="">
+                        <img src="./img/Experiência (2).png" alt="Imagen del juego Encriptador">
+                    </div>
+                </div>
+
+                <div class="proyectos_container__item">
+                    <!--<h3>Codigo Secreto</h3>
+                                    <h4>Encriptador de texto</h4>
+                                    <p>Challenge Alura Codificador</p>-->
+                    <div class="">
+                        <img src="./img/Experiência (3).png" alt=" Imagen del juego el Colgado">
+                    </div>
                 </div>
             </section>
 
             <!-- Contacto -->
-            <section>
-                <h2>Contacto</h2>
-                <form>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-
-                    <input type="submit" value="Enviar">
-                </form>
+            <section class="contacto_container">
+                <div class="contacto_container__item">
+                    <!-- Contenedor de la imagen -->
+                    <div class="contacto_item_imagen">
+                        <img src="./img/unsplash_JYGnB9gTCls.png" alt="Imagen de teléfono">
+                    </div>
+            
+                    <!-- Contenedor del formulario -->
+                    <div class="contacto_item_formulario">
+                        <h2>Contacto</h2>
+                        <p>¿Quieres entrar en contacto conmigo? Rellena el formulario al lado y me pondré en contacto contigo lo
+                            antes posible.</p>
+            
+                        <!-- Campos del formulario -->
+                        <form action="#">
+                            <div class="contacto_form_item">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="contacto_form_item">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="contacto_form_item">
+                                <label for="asunto">Asunto</label>
+                                <input type="text" id="asunto" name="asunto" required>
+                            </div>
+                            <div class="contacto_form_item">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="enviar_btn">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
 
-        <footer>
+        <foote class="footer_container">
             <p>2024 Andrés Marín - Todos los derechos reservados</p>
-            <div>
+            <div class="footer_item">
                 <a href="">Aviso de Privacidad</a>
                 <a href="">Términos y Condiciones</a>
             </div>
-        </footer>
+        </foote>
     </div>
 
 </body>
