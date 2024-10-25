@@ -35,7 +35,7 @@ Un portafolio bien elaborado puede marcar una significativa diferencia al buscar
 
 ## Vista Previa del Sitio
 
-Se puede acceder a una vista previa del portafolio a través del siguiente enlace: [Portafolio](https://tu-enlace-al-portafolio.com)
+Se puede acceder a una vista previa del portafolio a través del siguiente enlace: [Portafolio](https://amarinmella.github.io/Challenger-Portafolio/)
 
 ## Imágenes del Sitio
 
